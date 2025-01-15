@@ -338,10 +338,13 @@
 
         $('#' + widgetId).removeClass("compound");
         $('#' + widgetId + '_img').removeClass("singleImg");
+        $('#' + widgetId + '_div').removeClass("singleImg");
         jobj[0].setAttribute('compoundmode', 'false');
         
         var components = object.compoundChildren;
         delete object.generateCompound;
+
+        if(!components) return;
         for (var i = 0; i < components.length; i++) {
             var componentJobj = $jobj($ax.public.fn.getComponentId(widgetId, components[i]));
             componentJobj.css('display', 'none');
@@ -387,43 +390,6 @@
             'transform': transformString
         };
     }
-
-    $ax.public.fn.getCornersFromComponent = function (id) {
-        var element = document.getElementById(id);
-        var matrix = element ? $ax.public.fn.transformFromElement(element) : [1.0, 0.0, 0.0, 1.0, 0.0, 0.0];
-        var currentMatrix = { m11: matrix[0], m21: matrix[1], m12: matrix[2], m22: matrix[3], tx: matrix[4], ty: matrix[5] };
-        var dimensions = {};
-        var axObj = $ax('#' + id);
-        var viewportLocation = axObj.offsetLocation();
-        dimensions.left = viewportLocation.left;
-        dimensions.top = viewportLocation.top;
-        //dimensions.left = axObj.left(true);
-        //dimensions.top = axObj.top(true);
-        var size = axObj.size();
-        dimensions.width = size.width;
-        dimensions.height = size.height;
-        //var transformMatrix1 = { m11: 1, m12: 0, m21: 0, m22: 1, tx: -invariant.x, ty: -invariant.y };
-        //var transformMatrix2 = { m11: 1, m12: 0, m21: 0, m22: 1, tx: 500, ty: 500 };
-
-        var halfWidth = dimensions.width * 0.5;
-        var halfHeight = dimensions.height * 0.5;
-        //var preTransformTopLeft = { x: -halfWidth, y: -halfHeight };
-        //var preTransformBottomLeft = { x: -halfWidth, y: halfHeight };
-        var preTransformTopRight = { x: halfWidth, y: -halfHeight };
-        var preTransformBottomRight = { x: halfWidth, y: halfHeight };
-
-        return {
-            //relativeTopLeft: $ax.public.fn.matrixMultiply(currentMatrix, preTransformTopLeft),
-            //relativeBottomLeft: $ax.public.fn.matrixMultiply(currentMatrix, preTransformBottomLeft),
-            relativeTopRight: $ax.public.fn.matrixMultiply(currentMatrix, preTransformTopRight),
-            relativeBottomRight: $ax.public.fn.matrixMultiply(currentMatrix, preTransformBottomRight),
-            centerPoint: { x: dimensions.left + halfWidth, y: dimensions.top + halfHeight }
-            //originalDimensions: dimensions,
-            //transformShift: { x: matrix[4], y: matrix[5] }
-        }
-    }
-
-
 
     $ax.public.fn.inversePathLengthFunction = function (pathFunction) {
         // these are for computing the inverse functions of path integrals.

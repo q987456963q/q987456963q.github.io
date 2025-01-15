@@ -1,5 +1,5 @@
 ﻿.ax_default {
-  font-family:'Arial Normal', 'Arial';
+  font-family:"Arial Normal", "Arial", sans-serif;
   font-weight:400;
   font-style:normal;
   font-size:13px;
@@ -12,42 +12,44 @@
 }
 ._形状 {
 }
+._图片_ {
+}
 ._一级标题 {
-  font-family:'Arial Normal', 'Arial';
+  font-family:"Arial Normal", "Arial", sans-serif;
   font-weight:bold;
   font-style:normal;
   font-size:32px;
   text-align:left;
 }
 ._二级标题 {
-  font-family:'Arial Normal', 'Arial';
+  font-family:"Arial Normal", "Arial", sans-serif;
   font-weight:bold;
   font-style:normal;
   font-size:24px;
   text-align:left;
 }
 ._三级标题 {
-  font-family:'Arial Normal', 'Arial';
+  font-family:"Arial Normal", "Arial", sans-serif;
   font-weight:bold;
   font-style:normal;
   font-size:18px;
   text-align:left;
 }
 ._四级标题 {
-  font-family:'Arial Normal', 'Arial';
+  font-family:"Arial Normal", "Arial", sans-serif;
   font-weight:bold;
   font-style:normal;
   font-size:14px;
   text-align:left;
 }
 ._五级标题 {
-  font-family:'Arial Normal', 'Arial';
+  font-family:"Arial Normal", "Arial", sans-serif;
   font-weight:bold;
   font-style:normal;
   text-align:left;
 }
 ._六级标题 {
-  font-family:'Arial Normal', 'Arial';
+  font-family:"Arial Normal", "Arial", sans-serif;
   font-weight:bold;
   font-style:normal;
   font-size:10px;
@@ -150,7 +152,7 @@
 .ellipse1 {
 }
 .refs-design-apple {
-  font-family:'PingFang SC 55 Regular', 'PingFang SC';
+  font-family:"PingFang SC", sans-serif;
   font-weight:400;
   font-style:normal;
 }
@@ -158,4 +160,6 @@
 }
 .box_3 {
 }
-textarea, select, input, button { outline: none; }
+._默认样式2 {
+}
+textarea, select, input, button, div, svg { outline: none; }

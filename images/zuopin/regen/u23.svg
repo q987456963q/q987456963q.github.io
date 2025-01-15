@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="31px" height="31px" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="-10.074766355140232" y1="-18.59813084112154" x2="63.01869158878508" y2="54.49532710280366" id="LinearGradient1382">
+      <stop id="Stop1383" stop-color="#ffffff" stop-opacity="0.4980392156862745" offset="0" />
+      <stop id="Stop1384" stop-color="#ffffff" stop-opacity="0.4980392156862745" offset="1" />
+    </linearGradient>
+    <pattern id="BGPattern" patternUnits="userSpaceOnUse" alignment="0 0" imageRepeat="None" />
+    <mask fill="white" id="Clip1385">
+      <path d="M 13 1.0941176185661758  L 18 1.0941176185661758  L 18 13  L 29.90588235294118 13  L 29.90588235294118 18  L 18 18  L 18 30.270588263786756  L 13 30.270588263786756  L 13 18  L 0.7294117931985364 18  L 0.7294117931985364 13  L 13 13  L 13 1.0941176185661758  Z " fill-rule="evenodd" />
+    </mask>
+  </defs>
+  <g transform="matrix(1 0 0 1 -279 -1030 )">
+    <path d="M 13 1.0941176185661758  L 18 1.0941176185661758  L 18 13  L 29.90588235294118 13  L 29.90588235294118 18  L 18 18  L 18 30.270588263786756  L 13 30.270588263786756  L 13 18  L 0.7294117931985364 18  L 0.7294117931985364 13  L 13 13  L 13 1.0941176185661758  Z " fill-rule="nonzero" fill="url(#LinearGradient1382)" stroke="none" transform="matrix(1 0 0 1 279 1030 )" class="fill" />
+    <path d="M 13 1.0941176185661758  L 18 1.0941176185661758  L 18 13  L 29.90588235294118 13  L 29.90588235294118 18  L 18 18  L 18 30.270588263786756  L 13 30.270588263786756  L 13 18  L 0.7294117931985364 18  L 0.7294117931985364 13  L 13 13  L 13 1.0941176185661758  Z " stroke-width="0" stroke-dasharray="0" stroke="rgba(255, 255, 255, 0)" fill="none" transform="matrix(1 0 0 1 279 1030 )" class="stroke" mask="url(#Clip1385)" />
+  </g>
+</svg>
